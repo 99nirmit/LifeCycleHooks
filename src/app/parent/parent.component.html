@@ -1,0 +1,6 @@
+<p>parent works!</p>
+<input type="text" placeholder="Input Here"#val>
+<button (click)="submitValue(val)">Submit</button>
+<app-child *ngIf="childExist" [msg]="value">ngContent: {{value}}</app-child>
+<br><br>
+<button (click)="destroy()" class="btn btn-danger">Destroy Component</button>
